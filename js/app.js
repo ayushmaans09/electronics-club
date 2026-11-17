@@ -198,14 +198,14 @@ function initCountdown() {
 
     if (heroRegisterBtn) {
       heroRegisterBtn.innerHTML = `
-        <span>Register Now — Claim Delegate Pass</span>
+        <span>Register for Events</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
       `;
       heroRegisterBtn.href = '#events';
     }
 
     if (heroSecRegisterBtn) {
-      heroSecRegisterBtn.textContent = 'Explore All 8 Tracks';
+      heroSecRegisterBtn.textContent = 'View 3-Day Schedule';
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
