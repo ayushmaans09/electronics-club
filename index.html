@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHNOVA 2026 | National Electronics & Hardware Symposium</title>
+  <meta name="description" content="Official website for TECHNOVA 2026 - The premier collegiate electronics, VLSI, robotics, and edge AI symposium hosted by Apex Electronics Club.">
+  <meta name="theme-color" content="#080d1a">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="TECHNOVA 2026 Homepage">
+        <div class="brand-icon">
+          <!-- Cyber Circuit Chip Icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+            <rect x="9" y="9" width="6" height="6"></rect>
+            <line x1="9" y1="1" x2="9" y2="4"></line>
+            <line x1="15" y1="1" x2="15" y2="4"></line>
+            <line x1="9" y1="20" x2="9" y2="23"></line>
+            <line x1="15" y1="20" x2="15" y2="23"></line>
+            <line x1="20" y1="9" x2="23" y2="9"></line>
+            <line x1="20" y1="14" x2="23" y2="14"></line>
+            <line x1="1" y1="9" x2="4" y2="9"></line>
+            <line x1="1" y1="14" x2="4" y2="14"></line>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">TECHNOVA <span>2026</span></span>
+          <span class="brand-subtitle">Apex Electronics Club</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#registrations" class="nav-link">My Registrations</a></li>
+          <li><a href="#organiser" class="nav-link"><span class="badge badge-amber" style="font-size: 0.65rem; padding: 0.15rem 0.4rem; margin-right: 0.35rem;">DEMO</span>Organiser</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <a href="#registrations" class="reg-counter-pill" title="View your registered event passes">
+          <span>My Passes</span>
+          <span class="reg-counter-badge" id="navRegCount">0</span>
+        </a>
+        <a href="#events" class="btn btn-outline-cyan btn-sm">Explore Events</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="nav-link">Home <span>→</span></a></li>
+      <li><a href="#events" class="nav-link">Events & Tracks <span>→</span></a></li>
+      <li><a href="#schedule" class="nav-link">3-Day Timeline <span>→</span></a></li>
+      <li><a href="#faq" class="nav-link">FAQs & Rules <span>→</span></a></li>
+      <li><a href="#contact" class="nav-link">Contact & Campus <span>→</span></a></li>
+      <li><a href="#registrations" class="nav-link">My Digital Passes <span>→</span></a></li>
+      <li><a href="#organiser" class="nav-link">Organiser Console (Demo) <span>→</span></a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="#events" class="btn btn-primary" style="width: 100%;">Register for Events</a>
+      <a href="#contact" class="btn btn-secondary" style="width: 100%;">Campus Location</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         SECTION 1: HOME (Hero, Countdown, Live Metrics & Fest Pillars)
+         ====================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text & Controls -->
+          <div class="hero-content">
+            <div class="club-badge">
+              <span class="pulse-dot"></span>
+              <span>Apex Electronics & Robotics Club • Dept. of ECE, Apex Institute</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="hero-title-name">TECHNOVA 2026</span>
+              <span class="gradient-text hero-title-sub">Blueprinting the Connected Future</span>
+            </h1>
+
+            <p class="hero-tagline">
+              <span class="tagline-highlight">Where Silicon Architecture Meets Physical Intelligence.</span>
+              The premier collegiate hardware and embedded systems symposium. 3 High-intensity days of custom silicon layout, autonomous drone arenas, edge TinyML inferencing, and a 36-hour non-stop prototyping sprint.
+            </p>
+
+            <!-- Scannable Event Details Snapshot -->
+            <div class="hero-quick-details" aria-label="Key Event Details">
+              <!-- Detail 1: Dates -->
+              <div class="detail-micro-card">
+                <div class="detail-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <div class="detail-card-body">
+                  <span class="detail-card-label">Event Dates</span>
+                  <span class="detail-card-val">Nov 20 – 22, 2026</span>
+                  <span class="detail-card-sub">Starts Fri 09:00 AM IST</span>
+                </div>
+              </div>
+
+              <!-- Detail 2: Campus Venue -->
+              <div class="detail-micro-card">
+                <div class="detail-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="detail-card-body">
+                  <span class="detail-card-label">Campus Venue</span>
+                  <span class="detail-card-val">Innovation Quad, Level 2</span>
+                  <span class="detail-card-sub">Apex Institute, Bengaluru</span>
+                </div>
+              </div>
+
+              <!-- Detail 3: Prize Pool -->
+              <div class="detail-micro-card">
+                <div class="detail-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34c3.4-.6 6-3.56 6-7.16V4H4v3.5c0 3.6 2.6 6.56 6 7.16z"></path></svg>
+                </div>
+                <div class="detail-card-body">
+                  <span class="detail-card-label">Prize Pool</span>
+                  <span class="detail-card-val">₹3,00,000+ Prizes</span>
+                  <span class="detail-card-sub">Cash Grants & Hardware Kits</span>
+                </div>
+              </div>
+
+              <!-- Detail 4: Flagship Sprint -->
+              <div class="detail-micro-card">
+                <div class="detail-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div class="detail-card-body">
+                  <span class="detail-card-label">Flagship Hackathon</span>
+                  <span class="detail-card-val">36-Hr Hack-A-Silicon</span>
+                  <span class="detail-card-sub">40 Shortlisted Hardware Squads</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Countdown Timer Component with Completed State Handling -->
+            <div class="countdown-container" id="countdownContainer">
+              <div class="countdown-header-bar">
+                <div class="countdown-label">Symposium Live Countdown:</div>
+                <!-- Interactive Toggle for Evaluators to verify both Live & Completed States -->
+                <button type="button" id="toggleCompletedStateBtn" class="countdown-sim-btn" title="Toggle between Active Countdown and Sensible Completed State">
+                  ⚡ Simulate Completed State
+                </button>
+              </div>
+
+              <!-- State A: Active Live Countdown -->
+              <div id="countdownLiveWrapper">
+                <div class="countdown-grid">
+                  <div class="countdown-box">
+                    <div class="countdown-value" id="cdDays">00</div>
+                    <div class="countdown-unit">Days</div>
+                  </div>
+                  <div class="countdown-box">
+                    <div class="countdown-value" id="cdHours">00</div>
+                    <div class="countdown-unit">Hours</div>
+                  </div>
+                  <div class="countdown-box">
+                    <div class="countdown-value" id="cdMins">00</div>
+                    <div class="countdown-unit">Minutes</div>
+                  </div>
+                  <div class="countdown-box">
+                    <div class="countdown-value" id="cdSecs">00</div>
+                    <div class="countdown-unit">Seconds</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- State B: Sensible Completed-Event State -->
+              <div id="countdownCompletedWrapper" style="display: none;">
+                <div class="countdown-completed-card">
+                  <div class="completed-badge-row">
+                    <span class="badge badge-emerald">✓ EVENT CONCLUDED</span>
+                    <span style="font-size: 0.76rem; font-family: var(--font-mono); color: var(--cyan-light);">14th Annual Edition Archive</span>
+                  </div>
+                  <h3 class="completed-headline">TECHNOVA 2026 Has Concluded!</h3>
+                  <p class="completed-message">
+                    Thank you to our 1,400+ student delegates, 40 prototype squads, faculty advisors, and industry sponsors from Intel, TI, and Cadence for an electrifying 3-day symposium.
+                  </p>
+                  <div class="completed-chips-row">
+                    <span class="completed-chip">🏆 ₹3,00,000+ Awarded</span>
+                    <span class="completed-chip">⚡ 40 Hardware Builds</span>
+                    <span class="completed-chip">🎓 80+ Universities</span>
+                  </div>
+                  <div class="completed-actions">
+                    <a href="#events" class="btn btn-outline-cyan btn-sm">Explore Winning Tracks & Projects</a>
+                    <a href="#schedule" class="btn btn-secondary btn-sm">View Schedule Archive</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prominent Register Button & Action Group -->
+            <div class="hero-cta-group">
+              <a href="#events" id="heroRegisterBtn" class="btn btn-primary btn-hero-prominent">
+                <span>Register Now — Claim Delegate Pass</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <a href="#schedule" id="heroSecRegisterBtn" class="btn btn-secondary btn-lg">
+                <span>View 3-Day Schedule</span>
+              </a>
+              <button type="button" onclick="openRegistrationModal('hack-a-silicon')" class="btn btn-outline-cyan btn-lg">
+                <span>⚡ Quick Hackathon Pass</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero High-Tech Visual Card -->
+          <div class="hero-visual">
+            <div class="hero-circuit-card animate-float">
+              <div class="circuit-card-header">
+                <div class="circuit-card-chips">
+                  <span class="chip-status-dot"></span>
+                  <span class="chip-arch-label">RISC-V CORE [RV64GC]</span>
+                </div>
+                <span class="badge badge-cyan animate-signal">LIVE • 480 MHz</span>
+              </div>
+
+              <!-- Interactive Circuit Graphic (SVG) -->
+              <div class="circuit-viz-svg-container" title="TECHNOVA 2026 Hardware Architecture">
+                <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Circuit Grid & Traces -->
+                  <defs>
+                    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9"/>
+                      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.9"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Background Bus Lines -->
+                  <path d="M 20 90 L 140 90 L 170 50 L 320 50" stroke="rgba(0, 242, 254, 0.25)" stroke-width="2" fill="none"/>
+                  <path d="M 30 120 L 150 120 L 180 150 L 370 150" stroke="rgba(139, 92, 246, 0.25)" stroke-width="2" fill="none"/>
+                  <path d="M 50 30 L 130 30 L 160 70 L 360 70" stroke="rgba(0, 242, 254, 0.25)" stroke-width="2" fill="none"/>
+
+                  <!-- Central Silicon Die -->
+                  <rect x="150" y="45" width="100" height="90" rx="8" fill="#0b1221" stroke="#00f2fe" stroke-width="2"/>
+                  <rect x="165" y="60" width="70" height="60" rx="4" fill="#141f36" stroke="rgba(139, 92, 246, 0.6)" stroke-width="1.5"/>
+                  <text x="200" y="93" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="middle">TECHNOVA</text>
+                  <text x="200" y="106" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SOC-2026</text>
+
+                  <!-- Dynamic Pulsing Nodes -->
+                  <circle cx="140" cy="90" r="4" fill="#00f2fe"/>
+                  <circle cx="170" cy="50" r="3" fill="#8b5cf6"/>
+                  <circle cx="260" cy="90" r="4" fill="#00f2fe"/>
+                  <circle cx="320" cy="50" r="3" fill="#00f2fe"/>
+                  <circle cx="370" cy="150" r="4" fill="#8b5cf6"/>
+
+                  <!-- Flowing Traces -->
+                  <path d="M 150 70 L 80 70 L 60 40" stroke="url(#traceGrad)" stroke-width="1.8" fill="none" stroke-dasharray="6,4"/>
+                  <path d="M 250 110 L 310 110 L 340 140" stroke="url(#traceGrad)" stroke-width="1.8" fill="none" stroke-dasharray="6,4"/>
+                </svg>
+              </div>
+
+              <!-- Circuit Live Metrics -->
+              <div class="circuit-metrics-grid">
+                <div class="circuit-metric">
+                  <div class="metric-label">Clock Freq</div>
+                  <div class="metric-val">480 MHz Core</div>
+                </div>
+                <div class="circuit-metric">
+                  <div class="metric-label">Thermal Sense</div>
+                  <div class="metric-val" style="color: var(--emerald-light);">34.2 °C [Nominal]</div>
+                </div>
+                <div class="circuit-metric">
+                  <div class="metric-label">PCB Layering</div>
+                  <div class="metric-val">4-Layer Stack</div>
+                </div>
+                <div class="circuit-metric">
+                  <div class="metric-label">Bus Interface</div>
+                  <div class="metric-val">64-bit AXI</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats Ribbon -->
+      <div class="stats-ribbon">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">₹3.0L+</div>
+              <div class="stat-label">Total Prize Pool</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">36-Hr</div>
+              <div class="stat-label">Hardware Hackathon</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">8+</div>
+              <div class="stat-label">Competitive Tracks</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1,400+</div>
+              <div class="stat-label">Student Attendees</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillars / Core Fest Verticals -->
+      <div class="container" style="margin-top: 5rem;">
+        <div class="section-header">
+          <div class="section-eyebrow">Symposium Verticals</div>
+          <h2 class="section-title">Engineered for <span class="gradient-text">Physical Makers</span></h2>
+          <p class="section-desc">
+            Unlike standard software events, TECHNOVA focuses squarely on physical silicon, embedded electronics, autonomous robotics, and edge deployment.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+            </div>
+            <h3 class="pillar-title">VLSI & Circuit Design</h3>
+            <p class="pillar-desc">Schematic capture, 4-layer PCB routing, impedance matching, and digital logic synthesis on modern EDA tools.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="7"/><path d="M12 9v6M9 12h6M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3 class="pillar-title">Robotics & Avionics</h3>
+            <p class="pillar-desc">Combat bot arenas, line-maze navigators, custom flight controllers, and obstacle-avoidance micro quadcopters.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <h3 class="pillar-title">Edge AI & TinyML</h3>
+            <p class="pillar-desc">Squeezing neural network models directly onto microcontrollers for real-time sensor analytics without cloud roundtrips.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="pillar-title">Physical Prototyping</h3>
+            <p class="pillar-desc">Access to 3D printers, laser cutters, Hakko soldering stations, and Rigol 4-channel oscilloscopes in our open maker spaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: EVENTS CATALOG
+         ====================================================================== -->
+    <section id="events">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Competitions & Sprints</div>
+          <h2 class="section-title">Explore All <span class="gradient-text">Event Tracks</span></h2>
+          <p class="section-desc">
+            From our flagship 36-hour hardware hackathon to combat robotics, high-speed PCB layout sprints, and paper colloquiums. Filter by your field of interest.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="events-filter-bar" id="eventsFilterBar">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+
+        <!-- Event Cards Responsive Grid -->
+        <div class="events-grid" id="eventsGrid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: SCHEDULE (3-Day Interactive Timeline)
+         ====================================================================== -->
+    <section id="schedule" class="schedule-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Interactive Itinerary</div>
+          <h2 class="section-title">The 3-Day <span class="gradient-text">Master Schedule</span></h2>
+          <p class="section-desc">
+            Explore keynotes, lab challenge hours, combat rounds, and hackathon milestones across November 20–22, 2026. Switch between festival days or filter by technical track.
+          </p>
+        </div>
+
+        <!-- Schedule Meta Actions Bar -->
+        <div class="schedule-actions-bar">
+          <div class="schedule-days-summary">
+            <span class="badge badge-cyan">3 Full Days</span>
+            <span class="badge badge-purple">20+ Technical Sessions</span>
+            <span class="badge badge-emerald">36-Hour Hackathon</span>
+          </div>
+          <button class="btn btn-outline-cyan btn-sm" id="exportScheduleIcsBtn" title="Download TECHNOVA 2026 schedule in iCalendar (.ics) format">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Export 3-Day iCal (.ics)</span>
+          </button>
+        </div>
+
+        <!-- Day Selector Tabs -->
+        <div class="schedule-tabs" role="tablist" aria-label="Schedule Day Selection">
+          <button class="schedule-tab-btn active" data-day="day1" role="tab" aria-selected="true">
+            <span class="tab-title">Day 1 (Nov 20)</span>
+            <span class="tab-sub">Inauguration, Keynotes & 36H Hack Kickoff</span>
+          </button>
+          <button class="schedule-tab-btn" data-day="day2" role="tab" aria-selected="false">
+            <span class="tab-title">Day 2 (Nov 21)</span>
+            <span class="tab-sub">Robo Wars, Hackathon Sprint & Edge AI</span>
+          </button>
+          <button class="schedule-tab-btn" data-day="day3" role="tab" aria-selected="false">
+            <span class="tab-title">Day 3 (Nov 22)</span>
+            <span class="tab-sub">Research Colloquium, Pitch Demos & Valedictory</span>
+          </button>
+        </div>
+
+        <!-- Track Filter Buttons -->
+        <div class="schedule-track-filters" role="group" aria-label="Filter schedule by track">
+          <button class="track-filter-btn active" data-track="all">All Tracks</button>
+          <button class="track-filter-btn" data-track="Keynote">Keynotes</button>
+          <button class="track-filter-btn" data-track="Competitions">Competitions</button>
+          <button class="track-filter-btn" data-track="Hackathon">Hardware Hackathon</button>
+          <button class="track-filter-btn" data-track="Robotics">Robotics & Aerial</button>
+          <button class="track-filter-btn" data-track="Paper">Research Colloquium</button>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="timeline-container" id="scheduleTimeline" aria-live="polite">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4: FAQ (Accordion & Live Search)
+         ====================================================================== -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Clarifications & Logistics</div>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-desc">
+            Everything you need to know about team eligibility, provided lab instruments, hostel accommodation, and prize disbursements.
+          </p>
+        </div>
+
+        <!-- FAQ Category Filter Pills -->
+        <div class="faq-categories-wrapper" role="tablist" aria-label="FAQ Categories">
+          <button class="faq-category-pill active" data-category="all" role="tab">All Questions (12)</button>
+          <button class="faq-category-pill" data-category="eligibility" role="tab">Eligibility & Teams (4)</button>
+          <button class="faq-category-pill" data-category="hardware" role="tab">Hardware & Labs (3)</button>
+          <button class="faq-category-pill" data-category="logistics" role="tab">Hostel & Logistics (2)</button>
+          <button class="faq-category-pill" data-category="fees" role="tab">Fees & Prizes (2)</button>
+          <button class="faq-category-pill" data-category="rules" role="tab">Rules & Safety (1)</button>
+        </div>
+
+        <!-- FAQ Search Filter Input -->
+        <div class="faq-search-wrapper">
+          <span class="faq-search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </span>
+          <input type="text" id="faqSearchInput" class="faq-search-input" placeholder="Search questions (e.g. kit, fee, hostel, teams, oscilloscope)..." aria-label="Search FAQs">
+          <button type="button" id="faqSearchClearBtn" class="faq-search-clear-btn" aria-label="Clear search" style="display: none;">&times;</button>
+        </div>
+
+        <!-- FAQ Count Indicator -->
+        <div id="faqCountSummary" class="faq-count-summary">Showing 12 questions</div>
+
+        <!-- FAQ Accordion List -->
+        <div class="faq-container" id="faqContainer" aria-live="polite">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5: CONTACT & CAMPUS DIRECTORY
+         ====================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Electronics Club Secretariat</div>
+          <h2 class="section-title">Campus Venue & <span class="gradient-text">Club Support</span></h2>
+          <p class="section-desc">
+            Organized by the Apex Electronics & Robotics Club (AERC), Department of Electronics & Communication Engineering. Have queries regarding registrations, hardware lab gear, or outstation hostel stays? Reach out to our organizing team.
+          </p>
+        </div>
+
+        <!-- Club Identity Highlight Banner -->
+        <div class="club-identity-card">
+          <div class="club-identity-badge-row">
+            <div class="club-emblem">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <div>
+              <div class="club-title-text">Apex Electronics & Robotics Club (AERC)</div>
+              <div class="club-sub-text">Department of Electronics & Communication Engineering • Apex Institute of Technology</div>
+            </div>
+          </div>
+          <div class="club-pills-row">
+            <span class="club-meta-pill">IEEE Student Branch (STB64921) Partner</span>
+            <span class="club-meta-pill">Room C-302, Silicon Block</span>
+            <span class="club-meta-pill">Founded 2014</span>
+          </div>
+        </div>
+
+        <!-- Main 2-Column Contact Grid -->
+        <div class="contact-grid">
+          <!-- Left: Contact / Help Desk Form -->
+          <div class="contact-card">
+            <h3 class="contact-card-title">Send a Message to AERC Desk</h3>
+            <p class="contact-card-desc">Our student coordinator team will reply via email within 24 hours.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name <span class="req-star">*</span></label>
+                  <input type="text" id="contactName" class="form-input" placeholder="e.g. Priya Sharma" required>
+                  <div class="form-field-error" id="contactNameError">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">College Email Address <span class="req-star">*</span></label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="priya@college.edu" required>
+                  <div class="form-field-error" id="contactEmailError">Please enter a valid email address.</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Inquiry Subject</label>
+                <select id="contactSubject" class="form-select">
+                  <option value="General Query">General Symposium Query</option>
+                  <option value="Hardware Kit Details">Hardware Kit & Lab Tools</option>
+                  <option value="Accommodation Request">Hostel Accommodation for Outstation Teams</option>
+                  <option value="Sponsorship & Partnerships">Industry Sponsorship / Mentorship</option>
+                  <option value="Event Rules Clarification">Event Rules Clarification</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message <span class="req-star">*</span></label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Detail your query or requirement (min 10 characters)..." required></textarea>
+                <div class="form-field-error" id="contactMessageError">Please write a message with at least 10 characters.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width: 100%;">
+                <span>Submit Inquiry</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+            <!-- In-place Confirmation Card (Shown on successful submit) -->
+            <div id="contactSuccessCard" class="contact-success-card" style="display: none;">
+              <div class="contact-success-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h4 class="contact-success-title">Inquiry Ticket Received!</h4>
+              <p class="contact-success-desc" id="contactSuccessMessage">
+                Your question has been logged under ticket <strong id="contactTicketId">#INQ-2026-0001</strong>. Our student coordinator team will reply to your registered email within 24 hours.
+              </p>
+              <button type="button" class="btn btn-secondary btn-sm" id="contactResetBtn">Send Another Inquiry</button>
+            </div>
+          </div>
+
+          <!-- Right: Campus Venue, Transit & Coordinators -->
+          <div class="venue-card">
+            <h3 class="contact-card-title">Event & Lab Location</h3>
+            <p class="contact-card-desc">Apex Institute of Technology, Innovation Campus</p>
+
+            <!-- Mock Interactive Campus Map Graphic -->
+            <div class="mock-map-card">
+              <div class="mock-map-pin">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Silicon Block, Level 3 & Workshop Wing</div>
+              <div style="font-size: 0.8rem; color: var(--cyan-light); font-family: var(--font-mono); margin-bottom: 0.5rem;">GPS: 12.9716° N, 77.5946° E</div>
+              <a href="https://maps.google.com/?q=12.9716,77.5946" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan btn-xs" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">
+                <span>Open in Google Maps</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+
+            <!-- Transit & Venue Details -->
+            <div class="venue-details-list">
+              <div class="venue-detail-item">
+                <div class="venue-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div class="venue-detail-title">Campus & Lab Address</div>
+                  <div class="venue-detail-text">Advanced VLSI & Robotics Hub, Room C-302 (3rd Floor), Silicon Block, Apex Institute of Technology, Electronic City Phase 1, Bengaluru 560100</div>
+                </div>
+              </div>
+
+              <div class="venue-detail-item">
+                <div class="venue-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <div class="venue-detail-title">Secretariat & Lab Working Hours</div>
+                  <div class="venue-detail-text">Mon–Fri: 09:00 AM – 07:00 PM | Sat: 10:00 AM – 04:00 PM | Nov 20–22: 24/7 Active Desk</div>
+                </div>
+              </div>
+
+              <div class="venue-detail-item">
+                <div class="venue-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="venue-detail-title">Official Contact Emails</div>
+                  <div class="venue-detail-text">
+                    <a href="mailto:technova@apex-electronics.edu">technova@apex-electronics.edu</a> (Fest Desk)<br>
+                    <a href="mailto:aerc.club@apex.edu">aerc.club@apex.edu</a> (Club Official)
+                  </div>
+                </div>
+              </div>
+
+              <div class="venue-detail-item">
+                <div class="venue-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div class="venue-detail-title">Emergency Help Desk & WhatsApp</div>
+                  <div class="venue-detail-text"><a href="tel:+919876543210">+91 98765 43210</a> (Active round-the-clock during symposium)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faculty Leadership & Mentors Section -->
+        <div class="faculty-advisors-section" style="margin-top: 3rem;">
+          <h3 class="sub-section-title">Faculty Advisory Board</h3>
+          <p class="sub-section-desc">Guiding academic rigor, lab safety standards, and IEEE peer review.</p>
+          <div class="faculty-grid">
+            <div class="faculty-card">
+              <div class="faculty-avatar">👨‍🏫</div>
+              <div class="faculty-info">
+                <div class="faculty-name">Dr. Arvind Natarajan</div>
+                <div class="faculty-role">Faculty Patron & Head of Microelectronics Research</div>
+                <div class="faculty-dept">Dept. of ECE, Apex Institute of Technology • Ph.D. (IISc), Senior Member IEEE</div>
+                <div class="faculty-contact">
+                  <span>✉️ <a href="mailto:arvind.natarajan@apex-electronics.edu">arvind.natarajan@apex-electronics.edu</a></span>
+                  <span>📞 +91 80 2345 6789 (Ext. 302)</span>
+                  <span>🏢 Cabin C-308, Silicon Block</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-avatar">👩‍🏫</div>
+              <div class="faculty-info">
+                <div class="faculty-name">Prof. M. Soundarya</div>
+                <div class="faculty-role">Associate Faculty Coordinator & Embedded Systems Lead</div>
+                <div class="faculty-dept">Dept. of ECE, Apex Institute of Technology • M.Tech (VLSI & Embedded), IETE Fellow</div>
+                <div class="faculty-contact">
+                  <span>✉️ <a href="mailto:soundarya.m@apex-electronics.edu">soundarya.m@apex-electronics.edu</a></span>
+                  <span>📞 +91 80 2345 6790 (Ext. 306)</span>
+                  <span>🏢 Cabin C-312, Silicon Block</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Executive Committee Directory -->
+        <div class="coordinators-section" style="margin-top: 2.5rem;">
+          <h3 class="sub-section-title">Lead Student Coordinators (AERC)</h3>
+          <p class="sub-section-desc">Reach out directly to committee leads for event rules, kits, or accommodations.</p>
+          <div class="leads-grid-4">
+            <div class="lead-card-enhanced">
+              <div class="lead-card-header">
+                <div class="lead-avatar">👨‍💻</div>
+                <span class="badge badge-cyan">Overall Convener</span>
+              </div>
+              <div class="lead-name">Rohit Nair</div>
+              <div class="lead-role">President, AERC • Final Year B.Tech ECE</div>
+              <div class="lead-actions">
+                <a href="tel:+919876510001" class="lead-btn">📞 +91 98765 10001</a>
+                <a href="mailto:rohit.nair.aerc@apex.edu" class="lead-btn">✉️ Email Convener</a>
+              </div>
+            </div>
+
+            <div class="lead-card-enhanced">
+              <div class="lead-card-header">
+                <div class="lead-avatar">👩‍💻</div>
+                <span class="badge badge-purple">Hackathon Chair</span>
+              </div>
+              <div class="lead-name">Ananya Sharma</div>
+              <div class="lead-role">Vice President, AERC • Pre-Final Year Robotics & ECE</div>
+              <div class="lead-actions">
+                <a href="tel:+919876510002" class="lead-btn">📞 +91 98765 10002</a>
+                <a href="mailto:ananya.sharma.aerc@apex.edu" class="lead-btn">✉️ Email Hack Lead</a>
+              </div>
+            </div>
+
+            <div class="lead-card-enhanced">
+              <div class="lead-card-header">
+                <div class="lead-avatar">👨‍🔧</div>
+                <span class="badge badge-amber">Lab & Hardware Head</span>
+              </div>
+              <div class="lead-name">Devashish Sengupta</div>
+              <div class="lead-role">Technical Head, AERC • Third Year Embedded Systems</div>
+              <div class="lead-actions">
+                <a href="tel:+919876510003" class="lead-btn">📞 +91 98765 10003</a>
+                <a href="mailto:devashish.s.aerc@apex.edu" class="lead-btn">✉️ Email Lab Head</a>
+              </div>
+            </div>
+
+            <div class="lead-card-enhanced">
+              <div class="lead-card-header">
+                <div class="lead-avatar">👩‍💼</div>
+                <span class="badge badge-emerald">Hospitality Lead</span>
+              </div>
+              <div class="lead-name">Kavya Patel</div>
+              <div class="lead-role">Delegate Relations • Third Year B.Tech ECE</div>
+              <div class="lead-actions">
+                <a href="tel:+919876510004" class="lead-btn">📞 +91 98765 10004</a>
+                <a href="mailto:kavya.patel.aerc@apex.edu" class="lead-btn">✉️ Email Hospitality</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus Transit & Outstation Travel Guide -->
+        <div class="transit-section" style="margin-top: 2.5rem;">
+          <h3 class="sub-section-title">Campus Transit & Outstation Arrivals</h3>
+          <div class="transit-grid">
+            <div class="transit-card">
+              <div class="transit-icon">🚇</div>
+              <div class="transit-title">Namma Metro</div>
+              <div class="transit-desc">Take Yellow Line to Electronic City Metro Station (1.2 km away). Free university electric shuttles depart every 15 minutes to Campus Gate 1.</div>
+            </div>
+            <div class="transit-card">
+              <div class="transit-icon">🚌</div>
+              <div class="transit-title">BMTC City Buses</div>
+              <div class="transit-desc">Direct air-conditioned Volvo buses (Routes V-356, 356C, 360B) run from Kempegowda Bus Station (Majestic) directly to Apex Innovation Campus Stop.</div>
+            </div>
+            <div class="transit-card">
+              <div class="transit-icon">🧳</div>
+              <div class="transit-title">Outstation Cloakroom & Desks</div>
+              <div class="transit-desc">Arriving early or late? A 24/7 secure luggage locker room, charging lounge, and registration pass desk are located in the Block A Welcome Atrium.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 6: MY REGISTRATIONS (Client-Side Pass Portal & Verification)
+         ====================================================================== -->
+    <section class="registrations-section" id="registrations">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Personal Portal</div>
+          <h2 class="section-title">My Registered <span class="gradient-text">Event Passes</span></h2>
+          <p class="section-desc">
+            Your confirmed delegate registrations are securely stored right in your browser. Look up your passes by email or registration ID, present your digital QR pass at lab desks, or manage your event entries.
+          </p>
+        </div>
+
+        <!-- Student Registration Lookup Card -->
+        <div class="reg-lookup-card">
+          <div class="reg-lookup-header">
+            <div class="reg-lookup-title-group">
+              <span class="badge badge-cyan" style="margin-bottom: 0.35rem;">Pass Verification & Search</span>
+              <h3 class="reg-lookup-title">Delegate Pass Lookup</h3>
+              <p class="reg-lookup-subtitle">
+                Enter your registered college email or your unique Registration ID (e.g. <code>TNV-2026-XXXXXX</code>) to view matching event passes.
+              </p>
+            </div>
+            <div class="reg-lookup-header-actions">
+              <button type="button" class="btn btn-outline-cyan btn-sm" id="regShowAllBtn">
+                Show All Passes
+              </button>
+            </div>
+          </div>
+
+          <!-- Search Input Form -->
+          <form id="regSearchForm" class="reg-search-form" onsubmit="return false;">
+            <div class="reg-search-input-wrapper">
+              <span class="reg-search-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </span>
+              <input 
+                type="text" 
+                id="regSearchInput" 
+                class="reg-search-input" 
+                placeholder="Search by college email (e.g. aarav@campus.edu) or Registration ID (TNV-2026-...)" 
+                autocomplete="off"
+                aria-label="Search registrations by email or registration ID"
+              >
+              <button type="button" id="regSearchClearBtn" class="reg-search-clear-btn" aria-label="Clear search input" style="display: none;" title="Clear input">
+                ✕
+              </button>
+            </div>
+            <button type="submit" id="regSearchBtn" class="btn btn-primary reg-search-submit-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span>Find Passes</span>
+            </button>
+          </form>
+
+          <!-- Inline Search Feedback / Error Notice -->
+          <div id="regSearchFeedback" class="reg-search-feedback" style="display: none;" role="alert"></div>
+
+          <!-- Quick Suggestion Chips (populated dynamically if passes exist) -->
+          <div id="regQuickChipsContainer" class="reg-quick-chips-row" style="display: none;">
+            <span class="chips-label">Quick Search:</span>
+            <div id="regQuickChipsList" class="chips-list"></div>
+          </div>
+        </div>
+
+        <!-- Toolbar with status indicator & action buttons -->
+        <div class="registrations-toolbar">
+          <div class="registrations-count-indicator" id="registrationsCountIndicator">
+            Loading confirmed passes...
+          </div>
+          <div class="registrations-toolbar-actions">
+            <span id="activeSearchTag" class="active-filter-tag" style="display: none;">
+              <span id="activeSearchTagText">Filter: ...</span>
+              <button type="button" class="filter-tag-clear" onclick="resetRegistrationsSearch()" title="Remove filter">✕</button>
+            </span>
+            <a href="#events" class="btn btn-outline-cyan btn-sm">
+              + Register for More Events
+            </a>
+          </div>
+        </div>
+
+        <!-- Passes Container (Populated dynamically from localStorage) -->
+        <div class="registrations-grid" id="registrationsGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 7: DEMO ORGANISER CONSOLE (Local Storage Management & CSV Export)
+         ====================================================================== -->
+    <section class="organiser-section" id="organiser">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-eyebrow">Symposium Operations</div>
+          <h2 class="section-title">Organiser <span class="gradient-text">Registration Console</span></h2>
+          <p class="section-desc">
+            Operational dashboard for club coordinators and track leads to review registrations, audit team rosters, and generate master check-in sheets.
+          </p>
+        </div>
+
+        <!-- Prominent Demo Disclaimer Banner -->
+        <div class="demo-disclaimer-banner">
+          <div class="disclaimer-icon-col">
+            <div class="disclaimer-badge-icon" aria-hidden="true">⚠️</div>
+          </div>
+          <div class="disclaimer-content">
+            <div class="disclaimer-title-row">
+              <span class="badge badge-amber">DEMO ORGANISER VIEW</span>
+              <strong style="color: #fbbf24;">Client-Side Simulation • Local Dummy Data Only</strong>
+            </div>
+            <p class="disclaimer-text">
+              This console displays registrations saved in your current browser's local store (<code>localStorage</code>). It is an interactive demonstration prototype for club coordinators and does <strong>not</strong> connect to a live backend database, authenticate users, or transmit data over a secure network. Do not enter sensitive credentials.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats / Metrics Ribbon -->
+        <div class="organiser-metrics-grid">
+          <div class="org-metric-card">
+            <div class="org-metric-label">Total Registrations</div>
+            <div class="org-metric-value" id="orgTotalCount">0</div>
+            <div class="org-metric-sub" id="orgShowingCount">All event entries in store</div>
+          </div>
+          <div class="org-metric-card">
+            <div class="org-metric-label">Squad Formats</div>
+            <div class="org-metric-value" style="font-size: 1.55rem; margin-top: 0.35rem;" id="orgFormatBreakdown">0 Teams • 0 Solo</div>
+            <div class="org-metric-sub">Multi-member vs individual</div>
+          </div>
+          <div class="org-metric-card">
+            <div class="org-metric-label">Active Tracks</div>
+            <div class="org-metric-value" id="orgActiveTracksCount">0 / 6</div>
+            <div class="org-metric-sub">Tracks with active entries</div>
+          </div>
+          <div class="org-metric-card">
+            <div class="org-metric-label">CSV Data Export</div>
+            <div class="org-metric-value" style="font-size: 1.15rem; color: var(--emerald-light); margin-top: 0.55rem;">Ready (.csv)</div>
+            <div class="org-metric-sub">Master roster download</div>
+          </div>
+        </div>
+
+        <!-- Controls Toolbar: Search, Event Filter & CSV Export -->
+        <div class="organiser-controls-card">
+          <div class="org-controls-main-row">
+            <!-- Search Input -->
+            <div class="org-search-wrapper">
+              <span class="org-search-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </span>
+              <input 
+                type="text" 
+                id="orgSearchInput" 
+                class="form-input org-search-input" 
+                placeholder="Search by participant name, email, college, team, or ID..." 
+                aria-label="Filter registrations by text"
+              >
+              <button type="button" id="orgSearchClearBtn" class="reg-search-clear-btn" aria-label="Clear filter" style="display: none;" title="Clear filter">✕</button>
+            </div>
+
+            <!-- Event Filter Dropdown -->
+            <div class="org-filter-wrapper">
+              <select id="orgEventFilter" class="form-select org-event-select" aria-label="Filter by Event Track">
+                <option value="all">All Events & Tracks</option>
+                <option value="robo-wars">Robo Wars (Combat Arena)</option>
+                <option value="code-clash">Code Clash (Firmware & DSP)</option>
+                <option value="circuitrix">Circuitrix (Hardware Debug)</option>
+                <option value="tech-quiz">Tech Quiz (Buzzer Stage)</option>
+                <option value="hack-a-silicon">Hack-A-Silicon (36-Hr)</option>
+                <option value="edge-ai-iot">EdgeIoT Nexus (TinyML)</option>
+              </select>
+            </div>
+
+            <!-- Action Buttons: CSV Export & Demo Tools -->
+            <div class="org-actions-wrapper">
+              <button type="button" class="btn btn-primary" id="orgExportCsvBtn" title="Download registration roster as CSV file">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Export CSV (.csv)</span>
+              </button>
+              <button type="button" class="btn btn-outline-cyan btn-sm" id="orgSeedDemoBtn" title="Seed realistic demo registrations to test organizer tools">
+                <span>+ Seed Demo Data</span>
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm" id="orgClearDataBtn" title="Clear locally stored registrations" style="color: var(--rose-primary);">
+                <span>Reset Local Data</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Secondary Toolbar: Layout Toggle & Horizontal Scroll Prompt for Mobile -->
+          <div class="org-sub-toolbar">
+            <div class="org-showing-info" id="orgTableInfo">
+              Showing 0 registrations
+            </div>
+            <div class="org-view-toggle-group">
+              <span class="mobile-scroll-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                Swipe table horizontally on mobile
+              </span>
+              <div class="view-mode-buttons">
+                <button type="button" class="view-mode-btn active" id="orgViewModeTable" title="Table View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                  <span>Table</span>
+                </button>
+                <button type="button" class="view-mode-btn" id="orgViewModeCards" title="Compact Cards View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  <span>Compact</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table View Container (With Horizontal Scrolling on Small Screens) -->
+        <div class="organiser-table-container" id="orgTableContainer">
+          <div class="table-responsive">
+            <table class="organiser-table" id="organiserTable">
+              <thead>
+                <tr>
+                  <th>Reg ID & Pass</th>
+                  <th>Event Track</th>
+                  <th>Format & Squad</th>
+                  <th>Lead Participant</th>
+                  <th>Contact Details</th>
+                  <th>Academic Profile</th>
+                  <th>Allocated Venue</th>
+                  <th style="text-align: right;">Action</th>
+                </tr>
+              </thead>
+              <tbody id="organiserTableBody">
+                <!-- Dynamically populated by js/app.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Compact Cards View Container (Alternative for Mobile) -->
+        <div class="organiser-cards-container" id="orgCardsContainer" style="display: none;">
+          <div class="org-cards-grid" id="organiserCardsGrid">
+            <!-- Dynamically populated by js/app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       MODAL 1: EVENT DETAILS & RULES MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="eventDetailsModal" role="dialog" aria-modal="true" aria-labelledby="eventDetailsContent">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-body" id="eventDetailsContent">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeAllModals()">Close</button>
+        <button class="btn btn-primary" id="detailsModalActionBtn">Register for this Event</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: QUICK REGISTRATION FORM MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="registrationModal" role="dialog" aria-modal="true" aria-labelledby="modalRegHeading">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close registration modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <!-- VIEW 1: REGISTRATION INPUT FORM -->
+      <div id="regFormView">
+        <div class="modal-header">
+          <span class="badge badge-cyan" style="margin-bottom: 0.5rem;">Official Event Pass Portal</span>
+          <h3 id="modalRegHeading" style="font-size: 1.45rem;">Delegate Event Registration</h3>
+          <p style="font-size: 0.88rem; color: var(--cyan-light); margin-top: 0.35rem;" id="regEventTargetTitle">
+            Select and confirm your technical event registration.
+          </p>
+        </div>
+
+        <form id="eventRegistrationForm" novalidate>
+          <div class="modal-body">
+            <!-- Preselected Event Selector -->
+            <div class="form-group">
+              <label for="regEventSelect" class="form-label">Chosen Event Track <span class="req-star">*</span></label>
+              <select id="regEventSelect" class="form-select" required aria-label="Select Event Track">
+                <!-- Dynamically populated and preselected -->
+              </select>
+              <div class="form-field-error" id="err-regEventSelect"></div>
+            </div>
+
+            <!-- Preselected Event Snapshot Micro-Box -->
+            <div class="modal-event-snapshot" id="modalEventSnapshot">
+              <!-- Dynamically populated with event details, team size, deadline -->
+            </div>
+
+            <!-- Participation Format Card -->
+            <div class="form-group" style="margin-bottom: 1.25rem;">
+              <label class="form-label">Participation Format</label>
+              <div class="participation-type-pill-box" id="regParticipationPillBox">
+                <span class="badge badge-cyan" id="regParticipationBadge">Team Track</span>
+                <span class="participation-type-desc" id="regParticipationDesc">Multi-member engineering squad</span>
+              </div>
+              <input type="hidden" id="regParticipationType" name="participationType" value="Team">
+            </div>
+
+            <!-- Lead Participant Full Name -->
+            <div class="form-group">
+              <label for="regName" class="form-label">Lead Participant Full Name <span class="req-star">*</span></label>
+              <input type="text" id="regName" class="form-input" placeholder="e.g. Aarav Sharma" autocomplete="name" required>
+              <div class="form-field-error" id="err-regName"></div>
+            </div>
+
+            <!-- Email & Phone Contact Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regEmail" class="form-label">College Email Address <span class="req-star">*</span></label>
+                <input type="email" id="regEmail" class="form-input" placeholder="e.g. aarav@campus.edu" autocomplete="email" required>
+                <span class="form-field-hint">Used for pass confirmation & duplicate checks</span>
+                <div class="form-field-error" id="err-regEmail"></div>
+              </div>
+              <div class="form-group">
+                <label for="regPhone" class="form-label">Contact Number (10 Digits) <span class="req-star">*</span></label>
+                <input type="tel" id="regPhone" class="form-input" placeholder="e.g. 9876543210" maxlength="10" autocomplete="tel" required>
+                <span class="form-field-hint">Mobile number for schedule & desk alerts</span>
+                <div class="form-field-error" id="err-regPhone"></div>
+              </div>
+            </div>
+
+            <!-- Department & Academic Year Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regDept" class="form-label">Academic Department <span class="req-star">*</span></label>
+                <select id="regDept" class="form-select" required>
+                  <option value="">Select Department...</option>
+                  <option value="Electronics & Communication Engineering (ECE)">Electronics & Communication Engineering (ECE)</option>
+                  <option value="Electrical & Electronics Engineering (EEE)">Electrical & Electronics Engineering (EEE)</option>
+                  <option value="Computer Science & Engineering (CSE)">Computer Science & Engineering (CSE)</option>
+                  <option value="Robotics & Automation">Robotics & Automation</option>
+                  <option value="Information Technology & AI">Information Technology & AI</option>
+                  <option value="Instrumentation & Control">Instrumentation & Control</option>
+                  <option value="Mechanical & Mechatronics">Mechanical & Mechatronics</option>
+                  <option value="Polytechnic / Applied Electronics">Polytechnic / Applied Electronics</option>
+                  <option value="Other Technical Department">Other Technical Department</option>
+                </select>
+                <div class="form-field-error" id="err-regDept"></div>
+              </div>
+              <div class="form-group">
+                <label for="regYear" class="form-label">Academic Year <span class="req-star">*</span></label>
+                <select id="regYear" class="form-select" required>
+                  <option value="">Select Year...</option>
+                  <option value="1st Year">1st Year Undergraduate</option>
+                  <option value="2nd Year">2nd Year Undergraduate</option>
+                  <option value="3rd Year" selected>3rd Year Undergraduate</option>
+                  <option value="4th Year">Final Year Undergraduate</option>
+                  <option value="Postgraduate">M.Tech / Postgraduate / Ph.D.</option>
+                </select>
+                <div class="form-field-error" id="err-regYear"></div>
+              </div>
+            </div>
+
+            <!-- College / University Field -->
+            <div class="form-group">
+              <label for="regCollege" class="form-label">College / University <span class="req-star">*</span></label>
+              <input type="text" id="regCollege" class="form-input" placeholder="e.g. Apex Institute of Technology" required>
+              <div class="form-field-error" id="err-regCollege"></div>
+            </div>
+
+            <!-- Relevant Team Details Card -->
+            <div class="team-details-card" id="regTeamSection">
+              <div class="team-card-header">
+                <div class="team-card-title-row">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <h4>Team Roster & Squad Details</h4>
+                </div>
+                <span class="badge badge-violet" id="teamSizeBadge">Max 4 Members</span>
+              </div>
+
+              <!-- Visible when event is Team -->
+              <div id="teamFieldsContainer">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="regTeam" class="form-label" id="regTeamLabel">Team Name <span class="req-star">*</span></label>
+                    <input type="text" id="regTeam" class="form-input" placeholder="e.g. Silicon Squad Alpha">
+                    <div class="form-field-error" id="err-regTeam"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="regTeamSizeSelect" class="form-label">Total Team Size (including Lead)</label>
+                    <select id="regTeamSizeSelect" class="form-select">
+                      <!-- Populated dynamically based on event maxTeamSize -->
+                    </select>
+                  </div>
+                </div>
+
+                <div class="teammates-sub-section">
+                  <div class="teammates-sub-title">Additional Teammate Names</div>
+                  <div id="teammatesInputsContainer" class="teammates-inputs-grid">
+                    <!-- Dynamic inputs for Teammate 2, 3, etc. -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visible when event is Individual -->
+              <div id="soloNoticeContainer" style="display: none;" class="solo-event-notice">
+                <div class="solo-notice-icon">👤</div>
+                <div>
+                  <strong style="color: var(--cyan-light);">Individual Participation Event</strong>
+                  <p style="margin-top: 0.25rem; font-size: 0.88rem; color: var(--text-secondary);">
+                    No team name or teammates are required for this challenge. You will compete solo under your lead participant credentials.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Storage & Privacy Banner -->
+            <div class="reg-privacy-notice">
+              <span class="notice-icon">🔒</span>
+              <span><strong>Client-Side Storage:</strong> No server transmission. Your registration is validated client-side and saved immediately into your browser storage with duplicate prevention. View or cancel anytime under <strong>My Registrations</strong>.</span>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="closeAllModals()">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="confirmRegSubmitBtn">
+              <span>Confirm Event Registration</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- VIEW 2: REGISTRATION SUCCESS CONFIRMATION VIEW -->
+      <div id="regSuccessView" class="reg-success-view" style="display: none;">
+        <div class="modal-body" style="padding-bottom: 2rem;">
+          <div class="success-header-graphic">
+            <div class="success-chip-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <span class="badge badge-emerald">Registration Confirmed</span>
+            <h3 class="success-title">Official Delegate Pass Issued</h3>
+            <p class="success-subtitle">
+              You have successfully registered for TECHNOVA 2026. Your pass has been securely generated and saved in your browser storage.
+            </p>
+          </div>
+
+          <!-- Highlight Unique Registration ID Card -->
+          <div class="success-id-card">
+            <div class="success-id-label">UNIQUE REGISTRATION ID</div>
+            <div class="success-id-number" id="successRegId">TNV-2026-000000</div>
+            <div class="success-pass-code-tag" id="successPassCode">TN26-XXX-0000</div>
+            <button type="button" class="btn btn-sm btn-outline-cyan" id="copyRegIdBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span id="copyRegIdText">Copy Registration ID</span>
+            </button>
+          </div>
+
+          <!-- Registration Summary Table / Grid -->
+          <div class="success-summary-grid">
+            <div class="summary-item">
+              <span class="summary-label">Registered Event</span>
+              <span class="summary-value" id="successEventTitle">Robo Wars</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Format / Team</span>
+              <span class="summary-value" id="successParticipation">Team (Silicon Squad)</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Lead Delegate</span>
+              <span class="summary-value" id="successLeadName">Aarav Sharma</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">College Email</span>
+              <span class="summary-value" id="successEmail">aarav@campus.edu</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Contact Number</span>
+              <span class="summary-value" id="successPhone">+91 98765 43210</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Department & Year</span>
+              <span class="summary-value" id="successDeptYear">ECE • 3rd Year</span>
+            </div>
+            <div class="summary-item full-width">
+              <span class="summary-label">Institution / Campus</span>
+              <span class="summary-value" id="successCollege">Apex Institute of Technology</span>
+            </div>
+            <div class="summary-item full-width" id="successTeammatesRow" style="display: none;">
+              <span class="summary-label">Registered Teammates</span>
+              <span class="summary-value" id="successTeammatesList">Nikhil Rao, Kavya Suresh</span>
+            </div>
+            <div class="summary-item full-width">
+              <span class="summary-label">Venue & Schedule</span>
+              <span class="summary-value" id="successVenueSchedule">Arena Ground • Nov 21, 2026</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="success-action-buttons">
+            <button type="button" class="btn btn-primary" id="viewPassInMyRegistrationsBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>View Delegate Pass in My Registrations</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="registerAnotherEventBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Register for Another Event</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary -->
+        <div>
+          <a href="#home" class="nav-brand" style="margin-bottom: 0.8rem;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">TECHNOVA <span>2026</span></span>
+              <span class="brand-subtitle">Apex Electronics Club</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            The national symposium celebrating electronic engineering, embedded intelligence, autonomous robotics, and silicon innovation.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="Discord">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6h0a14.5 14.5 0 0 0-4-1.25A11 11 0 0 0 13 6a15.8 15.8 0 0 0-2 0 11 11 0 0 0-1-1.25A14.5 14.5 0 0 0 6 6a16.8 16.8 0 0 0-2 11 14.7 14.7 0 0 0 4.5 2.25 11.2 11.2 0 0 0 1-1.5 9.7 9.7 0 0 1-1.5-.75c.1-.1.2-.2.3-.3a11.3 11.3 0 0 0 9.4 0c.1.1.2.2.3.3a9.7 9.7 0 0 1-1.5.75 11.2 11.2 0 0 0 1 1.5 14.7 14.7 0 0 0 4.5-2.25A16.8 16.8 0 0 0 18 6zM8.5 14c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm7 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"></path></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home Overview</a></li>
+            <li><a href="#events">Competitions & Tracks</a></li>
+            <li><a href="#schedule">3-Day Timeline</a></li>
+            <li><a href="#faq">Rules & FAQs</a></li>
+            <li><a href="#contact">Campus & Help Desk</a></li>
+            <li><a href="#registrations">My Delegate Passes</a></li>
+            <li><a href="#organiser">Organiser Console (Demo)</a></li>
+          </ul>
+        </div>
+
+        <!-- Technical Categories -->
+        <div>
+          <h4 class="footer-col-title">Symposium Tracks</h4>
+          <ul class="footer-links-list">
+            <li><a href="#events">Hack-A-Silicon (36H)</a></li>
+            <li><a href="#events">RoboGladiators Combat</a></li>
+            <li><a href="#events">PCB Overdrive Layout</a></li>
+            <li><a href="#events">EdgeIoT TinyML Challenge</a></li>
+            <li><a href="#events">Silicon Paper Colloquium</a></li>
+            <li><a href="#events">AeroX Drone Dash</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div>
+          <h4 class="footer-col-title">Stay Updated</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+            Subscribe for problem statements release alerts and mentor announcements.
+          </p>
+          <div class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Enter student email" aria-label="Student email for newsletter">
+            <button class="btn btn-primary btn-sm" onclick="showToast('Thank you for subscribing to TECHNOVA 2026 alerts!', 'success')">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 TECHNOVA Symposium. Organized by Apex Electronics & Robotics Club (AERC). All rights reserved.
+        </div>
+        <div>
+          Affiliated with Department of ECE & IEEE Student Branch Chapter.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
